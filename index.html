@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Jet</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-  
+    <main class="page">
+        <div class="slider">
+            <div class="slider__item">
+                <div class="slider__content">
+                    <img src="./assets/img/samsung-logo.png" alt="Samsung logo" class="slider__logo" width="130" loading="lazy">
+                    <p class="slider__headline">
+                        <span class="slider__line">See why the Bespoke Jet™</span>
+                        <span class="slider__line"> is “so good” it made this</span>
+                        <span class="slider__line">
+                            <img src="./assets/img/kitchn-logo.png" alt="Kitchn logo" width="80" class="slider__img-span" loading="lazy">
+                            journalist cry
+                        </span>
+                    </p>
+                    <div class="slider__text-container">
+                        <p class="slider__quote"></p>
+                        <a href="about.html" class="slider__read-link">Read more...</a>
+                    </div>
+                    <div class="slider__controls">
+                        <nav class="slider__nav">
+                            <button class="slider__nav-btn slider__nav-btn--prev" id="prevBtn">
+                                <img src="./assets/img/left-arrow.png" alt="Previous slide" width="8" loading="lazy">
+                            </button>
+                            <p class="slider__page-number" id="pageNumber">1</p>
+                            <button class="slider__nav-btn slider__nav-btn--next" id="nextBtn">
+                                <img src="./assets/img/right-arrow.png" alt="Next slide" width="8" loading="lazy">
+                            </button>
+                        </nav>
+                        <button type="button" class="slider__button" onclick="location.href='shop.html'""><span>Shop now</span></button>
+                    </div>
+                </div>
+                <img src="./assets/img/main-image.png" alt="Bespoke photo" class="slider__image" id="slideImage" loading="lazy">
+                <p class="slider__title">Bespoke Jet™</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="./scripts/main.js"></script>
 </body>
+
 </html>
+
